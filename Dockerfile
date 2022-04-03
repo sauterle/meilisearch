@@ -8,7 +8,7 @@ RUN apt-get update && apt-get install --no-install-recommends -y \
     wget \
     ca-certificates
 
-RUN wget --quiet -O meilisearch https://github.com/meilisearch/MeiliSearch/releases/download/v${MEILISEARCH_VERSION}/meilisearch-linux-armv8 \
+RUN wget --quiet -O meilisearch https://github.com/meilisearch/MeiliSearch/releases/download/v${MEILISEARCH_VERSION}/meilisearch-linux-amd64 \
     && chmod +x meilisearch
 
 ENV MEILI_HTTP_ADDR 0.0.0.0:7700
